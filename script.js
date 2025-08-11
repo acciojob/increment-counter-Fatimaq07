@@ -1,6 +1,6 @@
-//your JS code here. If requirlet counter = document.getElementById("counter");
-    let incrementBtn = document.getElementById("incrementBtn");
-    incrementBtn.addEventListener("click", function() {
-      alert(counter.textContent);
-      counter.textContent = parseInt(counter.textContent) + 1;
-    });
+let counterElement = document.getElementById("counter");
+let incrementBtn = document.getElementById("incrementBtn");
+incrementBtn.addEventListener("click", function() {
+    alert(counterElement.textContent);
+    counterElement.textContent = parseInt(counterElement.textContent) + 1;
+});
