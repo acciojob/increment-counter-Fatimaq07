@@ -1,10 +1,9 @@
-let counterElement = document.getElementById("counter");
-let incrementBtn = document.getElementById("incrementBtn");
+let counter = document.getElementById('counter');
+let incrementBtn = document.getElementById('incrementBtn');
+let count = 0;
 
-incrementBtn.addEventListener("click", function () {
-  // Show alert with current value (un-incremented)
-  alert(counterElement.textContent);
-
-  // Increment and update display
-  counterElement.textContent = parseInt(counterElement.textContent) + 1;
+incrementBtn.addEventListener('click', () => {
+  alert(count);  // Show un-incremented value
+  count++;       // Increment counter
+  counter.textContent = count; // Update display
 });
